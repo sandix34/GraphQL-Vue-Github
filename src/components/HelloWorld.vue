@@ -1,29 +1,30 @@
 <template>
   <div class="hello">
     <h1 class="text-5xl font-semibold">Mes référentiels</h1>
+    <div v-for="repo in repositoryOwner.repositories.edges" :key="repo.id">
+      <p>{{ repo.node.createdAt }}</p>
+      <h3>{{ repo.node.name }}</h3>
+      <a :href="repo.node.url">Voir le référentiel</a>
+    </div>
   </div>
 </template>
 
 <script>
+import { sample } from "../queries/sample";
+
 export default {
-  name: "HelloWorld"
+  name: "HelloWorld",
+  apollo: {
+    repositoryOwner: sample
+  },
+  data() {
+    return {
+      repositoryOwner: []
+    }
+  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
