@@ -4,6 +4,7 @@
     <div v-for="repo in repositoryOwner.repositories.edges" :key="repo.id">
       <p>{{ repo.node.createdAt }}</p>
       <h3>{{ repo.node.name }}</h3>
+      <p v-html="repo.node.descriptionHTML"></p>
       <a :href="repo.node.url">Voir le référentiel</a>
     </div>
   </div>
