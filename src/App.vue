@@ -15,7 +15,14 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background:linear-gradient(to left bottom, #e9e9e9, #ebebeb, #d6d6d6, #b1b1b1, #505050);
+  background: linear-gradient(
+    to left bottom,
+    #e9e9e9,
+    #ebebeb,
+    #d6d6d6,
+    #b1b1b1,
+    #505050
+  );
 }
 
 #nav {
