@@ -2,6 +2,8 @@
 
 Ceci est un rapide exemple de projet de démonstration utilisant l'API GitHub graphql dans Vue avec vue-apollo pour présenter ses référentiels dans un portfolio par exemple.
 
+![référentiels](https://user-images.githubusercontent.com/44428775/68085262-69a00400-fe3f-11e9-8922-a3c51f11ffa6.png)
+
 
 ## Configuration du projet
 ```
